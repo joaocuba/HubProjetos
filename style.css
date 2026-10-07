@@ -224,43 +224,10 @@ h3 {
   margin-bottom: 30px;
 }
 
-.filter-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 28px;
-}
-
-.filter-button {
-  min-height: 40px;
-  padding: 8px 14px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  color: var(--text-muted);
-  cursor: pointer;
-  font: inherit;
-  font-size: 0.92rem;
-  font-weight: 700;
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-.filter-button:hover,
-.filter-button:focus,
-.filter-button.active {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #ffffff;
-}
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 22px;
-}
-
-.single-project-grid {
-  max-width: 760px;
+  gap: 18px;
 }
 
 .project-card,
@@ -274,8 +241,7 @@ h3 {
 .project-card {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  padding: 24px;
+  padding: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -286,28 +252,15 @@ h3 {
     var(--surface);
 }
 
-.project-highlights {
-  display: grid;
-  gap: 8px;
-  padding-left: 18px;
-  margin: 0 0 20px;
-  color: var(--text-muted);
-  font-size: 0.92rem;
-}
-
 .project-card:hover {
   box-shadow: 0 16px 36px rgba(23, 32, 51, 0.12);
   transform: translateY(-4px);
 }
 
-.project-card.hidden {
-  display: none;
-}
-
 .project-category {
   align-self: flex-start;
-  margin-bottom: 14px;
-  padding: 5px 9px;
+  margin-bottom: 10px;
+  padding: 4px 8px;
   border-radius: 999px;
   background: #e7f0ff;
   color: var(--primary-dark);
@@ -316,19 +269,20 @@ h3 {
 }
 
 .project-card p {
-  margin: 0 0 18px;
+  margin: 0;
   color: var(--text-muted);
 }
 
 .tech-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: auto 0 22px;
+  gap: 6px;
+  margin: auto 0 14px;
+  padding-top: 14px;
 }
 
 .tech-list span {
-  padding: 5px 9px;
+  padding: 4px 8px;
   border: 1px solid var(--border);
   border-radius: 999px;
   color: #344057;
@@ -455,16 +409,6 @@ h3 {
   .contact-content {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-
-  .filter-bar {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 6px;
-  }
-
-  .filter-button {
-    flex: 0 0 auto;
   }
 
   .contact-links {
